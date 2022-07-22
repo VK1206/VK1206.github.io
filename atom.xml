@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://VK1206.github.io</id>
+    <title>VK&apos;s blog</title>
+    <updated>2022-07-22T18:07:11.918Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://VK1206.github.io"/>
+    <link rel="self" href="https://VK1206.github.io/atom.xml"/>
+    <subtitle>本博客由德意志第四帝国VK创建</subtitle>
+    <logo>https://VK1206.github.io/images/avatar.png</logo>
+    <icon>https://VK1206.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2022, VK&apos;s blog</rights>
+    <entry>
+        <title type="html"><![CDATA[YouTube直连APP下载]]></title>
+        <id>https://VK1206.github.io/post/yF4NQL3rr/</id>
+        <link href="https://VK1206.github.io/post/yF4NQL3rr/">
+        </link>
+        <updated>2022-07-22T17:14:04.000Z</updated>
+        <content type="html"><![CDATA[<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>下载链接获取</title>
+</head>
+<body>
+<p>点击按钮，在等待 3 秒后弹出 下载链接。</p>
+<button onclick="myFunction()">获取</button>
+<script>
+function myFunction(){
+	setTimeout(function(){alert("http://stoodsef.com/3j6w")},3000);
+}
+</script>
+</body>
+</html>
+<p><strong>链接进去后不能下载？</strong><br>
+<strong>可以试试点击下面的链接去原网站下载</strong><br>
+<a href="https://github.com/libre-tube/LibreTube">https://github.com/libre-tube/LibreTube</a></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[回到梦开始的地方]]></title>
+        <id>https://VK1206.github.io/post/rzcpJdhm0/</id>
+        <link href="https://VK1206.github.io/post/rzcpJdhm0/">
+        </link>
+        <updated>2022-07-15T16:45:25.000Z</updated>
+        <content type="html"><![CDATA[<p><img src="https://VK1206.github.io/post-images/1657903549584.jpg" alt="" loading="lazy"><br>
+<img src="https://VK1206.github.io/post-images/1657903557257.jpg" alt="" loading="lazy"><br>
+<img src="https://VK1206.github.io/post-images/1657903567636.jpg" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[每日10遍]]></title>
+        <id>https://VK1206.github.io/post/roPUKyX48/</id>
+        <link href="https://VK1206.github.io/post/roPUKyX48/">
+        </link>
+        <updated>2022-07-15T16:10:50.000Z</updated>
+        <content type="html"><![CDATA[<div style="position: relative; padding: 30% 45%;">
+    <iframe style="
+        position: absolute; 
+        width: 100%; 
+        height: 100%; 
+        left: 0; top: 0;" 
+        src="//player.bilibili.com/player.html?aid=770623291&bvid=BV1jr4y1u7ch&cid=764206363&page=1&high_quality=1" 
+        scrolling="no" 
+        border="0" 
+        frameborder="no" 
+        framespacing="0" 
+        allowfullscreen="true">
+    </iframe>
+</div>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[关于蓝白P站开R-18]]></title>
+        <id>https://VK1206.github.io/post/8U-2YvsNg/</id>
+        <link href="https://VK1206.github.io/post/8U-2YvsNg/">
+        </link>
+        <updated>2022-07-12T17:23:23.000Z</updated>
+        <summary type="html"><![CDATA[<p>咳咳.....（战术咳嗽）<br>
+P站R-18都应该知道吧，这里我会告诉你如何开启R-18并且免翻在墙里面正常看</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>咳咳.....（战术咳嗽）<br>
+P站R-18都应该知道吧，这里我会告诉你如何开启R-18并且免翻在墙里面正常看</p>
+<!-- more -->
+<p>1.用一个梯子去pixiv.net先去注册一个账户（需要邮箱）<br>
+2.在设置里把有年龄限制的作品里面的选项开启<br>
+3.关掉梯子回来，使用pxvr直连APP<br>
+（因为相关限制与你的账户绑定在一起，所以回墙里来不会取消。pxvr和梯子的下载去我发布的文章《好网址》寻找）<br>
+4.在pxvr登录你注册的账户（pxvr第一次打开会送你短时间的大会员，加载很快，可以通过卸载后再装达到白嫖永久大会员的效果）<br>
+5.搜索R-18，就有了<br>
+6.瞄准后，冲冲冲！！！</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[HTML新尝试]]></title>
+        <id>https://VK1206.github.io/post/orZrLT8bW/</id>
+        <link href="https://VK1206.github.io/post/orZrLT8bW/">
+        </link>
+        <updated>2022-07-12T16:05:38.000Z</updated>
+        <content type="html"><![CDATA[<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<script>
+function changeImage()
+{
+	element=document.getElementById('myimage')
+	if (element.src.match("bulbon"))
+	{
+		element.src="/post-images/E1.gif";
+	}
+	else
+	{
+		element.src="/post-images/E1deployed.gif";
+	}
+}
+</script>
+<img id="myimage" onclick="changeImage()" border="0" src="/images/pic_bulboff.gif" width="100" height="180">
+<p>点击大兵 部署/取消部署 (不知道为啥，加载不出大兵未部署的图片)</p>
+</body>
+</html>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[教你怎么把网页转应用]]></title>
+        <id>https://VK1206.github.io/post/jskHrwJfy/</id>
+        <link href="https://VK1206.github.io/post/jskHrwJfy/">
+        </link>
+        <updated>2022-06-26T16:14:27.000Z</updated>
+        <content type="html"><![CDATA[<div style="position: relative; padding: 30% 45%;">
+    <iframe style="
+        position: absolute; 
+        width: 100%; 
+        height: 100%; 
+        left: 0; top: 0;" 
+        src="//player.bilibili.com/player.html?aid=214676701&bvid=BV1xa41177Hr&cid=738807234&page=1&high_quality=1" 
+        scrolling="no" 
+        border="0" 
+        frameborder="no" 
+        framespacing="0" 
+        allowfullscreen="true">
+    </iframe>
+</div>
+<p>视频用到的软件     <a href="https://dam.musetransfer.com/share/4adc6e7410d548b4918fa8ffe2d68f1c">进入</a></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[物理学习资料免费领取]]></title>
+        <id>https://VK1206.github.io/post/zXkzaRaiC/</id>
+        <link href="https://VK1206.github.io/post/zXkzaRaiC/">
+        </link>
+        <updated>2022-06-26T16:07:42.000Z</updated>
+        <content type="html"><![CDATA[<p>本学习资料不仅包括高中必修1和2，也包括部分选修内容<br>
+还等什么？点击下方的“领取”免费领取！<br>
+↓↓↓<br>
+<a href="https://vdse.bdstatic.com//192d9a98d782d9c74c96f09db9378d93.mp4">领取</a></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[⚡️电摇嘲讽⚡️]]></title>
+        <id>https://VK1206.github.io/post/Y2Q7hujqd/</id>
+        <link href="https://VK1206.github.io/post/Y2Q7hujqd/">
+        </link>
+        <updated>2022-06-22T16:26:53.000Z</updated>
+        <content type="html"><![CDATA[<div style="position: relative; padding: 30% 45%;">
+    <iframe style="
+        position: absolute; 
+        width: 100%; 
+        height: 100%; 
+        left: 0; top: 0;" 
+        src="//player.bilibili.com/player.html?aid=511890583&bvid=BV1Jg411o7J4&cid=732128371&page=1&high_quality=1" 
+        scrolling="no" 
+        border="0" 
+        frameborder="no" 
+        framespacing="0" 
+        allowfullscreen="true">
+    </iframe>
+</div>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[优雅，实在是太优雅了！]]></title>
+        <id>https://VK1206.github.io/post/dG8_e2MFn/</id>
+        <link href="https://VK1206.github.io/post/dG8_e2MFn/">
+        </link>
+        <updated>2022-06-22T16:21:42.000Z</updated>
+        <content type="html"><![CDATA[<div style="position: relative; padding: 30% 45%;">
+    <iframe style="
+        position: absolute; 
+        width: 100%; 
+        height: 100%; 
+        left: 0; top: 0;" 
+        src="//player.bilibili.com/player.html?aid=981813379&bvid=BV1mt4y1W72K&cid=726430496&page=1&high_quality=1" 
+        scrolling="no" 
+        border="0" 
+        frameborder="no" 
+        framespacing="0" 
+        allowfullscreen="true">
+    </iframe>
+</div>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[纳米机器，小子]]></title>
+        <id>https://VK1206.github.io/post/ZHODmaDYi/</id>
+        <link href="https://VK1206.github.io/post/ZHODmaDYi/">
+        </link>
+        <updated>2022-06-22T16:13:39.000Z</updated>
+        <content type="html"><![CDATA[<div style="position: relative; padding: 30% 45%;">
+    <iframe style="
+        position: absolute; 
+        width: 100%; 
+        height: 100%; 
+        left: 0; top: 0;" 
+        src="//player.bilibili.com/player.html?aid=638476490&bvid=BV14Y4y1Y7RT&cid=584173470&page=1&high_quality=1" 
+        scrolling="no" 
+        border="0" 
+        frameborder="no" 
+        framespacing="0" 
+        allowfullscreen="true">
+    </iframe>
+</div>]]></content>
+    </entry>
+</feed>
