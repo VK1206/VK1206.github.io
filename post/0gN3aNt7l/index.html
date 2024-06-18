@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>利用Hax免费VPS搭建梯子节点 | VK&#39;s blog</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://VK1206.github.io/favicon.ico?v=1718720678484">
+<link rel="stylesheet" href="https://VK1206.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="前提准备：①一个Telegram账户（用于注册Hax），②一个域名（freenom免费申请一个域名就行），③梯子（非必要，如果哪一步加载慢之类的可以试试挂梯子）,④一个CloudFlare（域名解析平台）的账号
+一.注册Hax
+来到Hax的..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://VK1206.github.io">
+        <img src="https://VK1206.github.io/images/avatar.png?v=1718720678484" class="site-logo">
+        <h1 class="site-title">VK&#39;s blog</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+        
+          <a href="https://VK1206.github.io/post/R8VltFrM-" class="site-nav">
+            好网址
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/VK1206" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+          <a class="social-link" href="https://twitter.com/VK051206" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+          <a class="social-link" href="https://www.facebook.com/profile.php?id=100087056360463" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+        
+      
+    </div>
+    <div class="site-description">
+      你所热爱的,就是你的生活!
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://VK1206.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">利用Hax免费VPS搭建梯子节点</h2>
+            <div class="post-date">2023-01-05</div>
+            
+            <div class="post-content" v-pre>
+              <p>前提准备：①一个Telegram账户（用于注册Hax），②一个域名（freenom免费申请一个域名就行），③梯子（非必要，如果哪一步加载慢之类的可以试试挂梯子）,④一个CloudFlare（域名解析平台）的账号</p>
+<p><strong>一.注册Hax</strong><br>
+来到Hax的官网，hax.co.id<br>
+找到register，注册。在最下面找到Hax_bot，用telegram给它发注册代码/getid<br>
+然后根据它的提示一步步来注册，注册完登录即可。（一定要记好ID号和密码）</p>
+<p><strong>二.开始搭建</strong><br>
+1.系统我选择的Centos7，直接ssh服务器 （hax自带网页版，推荐使用，如果是euserv也可以用hax的）执行脚本：</p>
+<pre><code>bash &lt;(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
+</code></pre>
+<p>2、端口映射</p>
+<p>选择一个未被墙的节点，映射一个端口到 IPv6的54321端口，然后再一个映射另一个端口到 IPv6的443端口,如图；<br>
+<img src="https://VK1206.github.io/post-images/1672910071391.png" alt="" loading="lazy"></p>
+<p>3、浏览器访问 91.134.238.134:3081 （这里的3081，是自定义的）</p>
+<p>4、登陆用户名admin 密码admin 添加入站规则如图:<br>
+<img src="https://VK1206.github.io/post-images/1672910091262.png" alt="" loading="lazy"></p>
+<p>5、保存后，拷贝链接即可实现上网，可使用v2ray客户端，或者用小火箭扫描二维码添加节点测试；<br>
+这个步骤完成后，机器的速度很慢，看看网页还行，如果要安装BBR加速那就更好了，请向下看：</p>
+<p><strong>三.安装BBR加速</strong></p>
+<p>使用脚本如下，推荐安装bbrplus：</p>
+<pre><code>wget -N --no-check-certificate &quot;https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh&quot; &amp;&amp; chmod +x tcp.sh &amp;&amp; ./tcp.sh
+</code></pre>
+<p>1、安装BBRplus，重启vps；</p>
+<p>2、重启后再次运行 ./tcp.sh ，选择4，启动BBRplus；</p>
+<p>3、再次运行 ./tcp.sh ，选择10，优化系统并再次重启；</p>
+<p>至此，BBR加速安装完成，你会发现机器网络访问速度明显提升，但是非常容易被墙，为了让你的梯子更长久稳定，最后一步也非常有必要。</p>
+<p><strong>四.添加伪装</strong><br>
+使用IPv6网络不仅仅是稳定，也能让速度更强劲</p>
+<p>1、在CloudFlare中DNS中，给域名添加AAAA记录为IPv6地址；</p>
+<p>2、在SSL/TLS中，选择“完全”，然后申请客户端证书；</p>
+<p>3、在Xray面板中，修改入站规则如图：<br>
+<img src="https://VK1206.github.io/post-images/1672910375342.png" alt="" loading="lazy"></p>
+<p>4、完成后，可以使用复制链接或者扫描二维码的方式添加到v2ray客户端，搭建过程全部完成。</p>
+<p>没有任何错误的情况下，免费的IPv6就可以看1080P的高清视频了，下载速度大约是2M/s,Youtube视频最高12000kbps，这也差不多达到最优设置了。</p>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://VK1206.github.io/post/j66_0742N/">
+                  <h3 class="post-title">
+                    爱你们哦❤️
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>

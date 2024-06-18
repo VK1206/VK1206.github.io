@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Termius跨平台SSH神器 | VK&#39;s blog</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://VK1206.github.io/favicon.ico?v=1718720678484">
+<link rel="stylesheet" href="https://VK1206.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="
+Termius是一款非常好用的跨平台SSH客户端，内置 SFTP、MOSH 和 TELNET 客户端，界面简洁美观，安全性极高。
+官网地址：https://termius.com/
+windows版下载：https://termius.c..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://VK1206.github.io">
+        <img src="https://VK1206.github.io/images/avatar.png?v=1718720678484" class="site-logo">
+        <h1 class="site-title">VK&#39;s blog</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+        
+          <a href="https://VK1206.github.io/post/R8VltFrM-" class="site-nav">
+            好网址
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/VK1206" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+          <a class="social-link" href="https://twitter.com/VK051206" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+          <a class="social-link" href="https://www.facebook.com/profile.php?id=100087056360463" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+        
+      
+    </div>
+    <div class="site-description">
+      你所热爱的,就是你的生活!
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://VK1206.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Termius跨平台SSH神器</h2>
+            <div class="post-date">2022-09-22</div>
+            
+            <div class="post-content" v-pre>
+              <p><img src="https://VK1206.github.io/post-images/1663777501791.png" alt="" loading="lazy"><br>
+Termius是一款非常好用的跨平台SSH客户端，内置 SFTP、MOSH 和 TELNET 客户端，界面简洁美观，安全性极高。</p>
+<p>官网地址：https://termius.com/</p>
+<p>windows版下载：https://termius.com/windows</p>
+<p>破解版下载：http://www.downxia.com/downinfo/320237.html</p>
+<p>视频教程演示：<br>
+Youtube：https://www.youtube.com/watch?v=klNrqXnuELE</p>
+<p>交流群组开通啦~https://t.me/+I9uhnzwDu4U3Njkx</p>
+<p>1、添加并连接服务器；<br>
+<img src="https://VK1206.github.io/post-images/1663777488408.png" alt="" loading="lazy"><br>
+2、添加密钥，使用密钥登录服务器；</p>
+<p>3、主机隧道功能演示；<br>
+<img src="https://VK1206.github.io/post-images/1663777530004.png" alt="" loading="lazy"><br>
+4、SFTP功能，代码片段功能；<br>
+<img src="https://VK1206.github.io/post-images/1663777690587.png" alt="" loading="lazy"><br>
+5、多终端同步以及主题和其他平台演示。<br>
+除了开源的putty之后，Termius是我用过的最符合个人使用习惯的一款SSH工具，堪称神器。<br>
+汉化方法：首先安装好visual studio code，然后打开打开 app/js/entry.js；<br>
+<img src="https://VK1206.github.io/post-images/1663777738153.jpg" alt="" loading="lazy"><br>
+搜索需要汉化的单词，比如，主界面有一个 New Host， 在entry.js里搜索 “New Host”，然后修改为对应汉字，比如“新建主机”；<br>
+<img src="https://VK1206.github.io/post-images/1663777782799.jpg" alt="" loading="lazy"><br>
+<img src="https://VK1206.github.io/post-images/1663777793666.jpg" alt="" loading="lazy"><br>
+保存后重新打开软件查看效果，建议每次修改后重新打开软件查看效果<br>
+<img src="https://VK1206.github.io/post-images/1663777836530.jpg" alt="" loading="lazy"></p>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://VK1206.github.io/post/GGVEb1B0w/">
+                  <h3 class="post-title">
+                     来自IBM的2核4G免费VPS，无需信用卡
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>
